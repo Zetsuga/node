@@ -1,0 +1,209 @@
+:root{
+    --acero:#808080;
+    --agua:#0066ff;
+    --bicho: #99cc00;
+    --dragon: #6600cc;
+    --electrico: #ffff4d;
+    --fantasma: #633663;
+    --fuego: #cc0000;
+    --hada: #ff99ff;
+    --hielo: #99ccff;
+    --lucha: #994d33;
+    --normal: #f2f2f2;
+    --planta: #33cc33;
+    --psiquico: #ff6699;
+    --roca: #999966;
+    --siniestro: #3d3d29;
+    --tierra: #b38c19;
+    --veneno: #b87a99;
+    --volador: #ccccff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.bannerPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buscar__titulo{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+.buscar__input{
+    border:none;
+    box-shadow: 2px 3px 5px grey;
+    border-radius: 5px;
+}
+
+.buscar__boton{
+    border: none;
+    padding: 5px 12px;
+    background-color: #0066ff;
+    box-shadow: 2px 3px 5px #0066ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.buscar__pokemon{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5px;
+}
+
+.ficha__pokemon{
+    padding-top: 50px;
+}
+
+.toast{
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    width: 250px;
+}
+
+.toast___titulo--verde{
+    color: #0bb51f;
+}
+
+.toast___titulo--rojo{
+    color: #d30404;
+}
+
+.toast__texto{
+    color:black;
+}
+
+.titulo__movimientos{
+    padding-top: 50px;
+}
+
+.tablaLvl,.tablaMt{
+    padding-top: 50px;
+}
+
+.borde__ficha{
+    border: none;
+}
+
+.borde__ficha--acero{
+    border: 5px solid var(--acero);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--acero);
+}
+
+.borde__ficha--agua{
+    border: 5px solid var(--agua);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--agua);
+}
+
+.borde__ficha--bicho{
+    border: 5px solid var(--bicho);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--bicho);
+}
+
+.borde__ficha--dragon{
+    border: 5px solid var(--dragon);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--dragon);
+}
+
+.borde__ficha--electrico{
+    border: 5px solid var(--electrico);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--electrico);
+}
+
+.borde__ficha--fuego{
+    border: 5px solid var(--fuego);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--fuego);
+}
+
+.borde__ficha--fantasma{
+    border: 5px solid var(--fantasma);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--fantasma);
+}
+
+.borde__ficha--hada{
+    border: 5px solid var(--hada);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--hada);
+}
+
+.borde__ficha--hielo{
+    border: 5px solid var(--hielo);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--hielo);
+}
+
+.borde__ficha--lucha{
+    border: 5px solid var(--lucha);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--lucha);
+}
+
+.borde__ficha--normal{
+    border: 5px solid var(--normal);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--normal);
+}
+
+.borde__ficha--planta{
+    border: 5px solid var(--planta);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--planta);
+}
+
+.borde__ficha--psiquico{
+    border: 5px solid var(--psiquico);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--psiquico);
+}
+
+.borde__ficha--roca{
+    border: 5px solid var(--roca);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--roca);
+}
+
+.borde__ficha--siniestro{
+    border: 5px solid var(--siniestro);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--siniestro);
+}
+
+.borde__ficha--tierra{
+    border: 5px solid var(--tierra);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--tierra);
+}
+
+.borde__ficha--veneno{
+    border: 5px solid var(--veneno);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--veneno);
+}
+
+.borde__ficha--volador{
+    border: 5px solid var(--volador);
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px var(--volador);
+}

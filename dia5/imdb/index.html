@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">   
+    <script src="https://kit.fontawesome.com/a2677bfb96.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecera">
+        <figure class="cabecera__logo">
+            <img src="./img/IMDB_Logo_2016.svg" alt="Logo" class="img-fluid">
+        </figure>
+        <nav class="cabecera__menu">
+            <a href="" class="cabecera__menu__boton">Inicio</a>
+            <a href="" class="cabecera__menu__boton">Actores</a>
+            <a href="" class="cabecera__menu__boton">Formulario</a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+            
+        <div class="bannerPrincipal" id="inicio">
+            <img src="./img/banner.jpg" alt="" class="img-fluid bannerPrincipal__imagen">
+        </div>
+
+            <div class="container listaActores">
+                <div class="row" id="actores">
+
+                </div>
+            </div>
+
+            <div class="container formulario">
+                <div class="row">
+                    <div class="col-xs-12 text-center formulario__titulo">
+                        Formulario Actores
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-xs-12 col-sm-12 col-md-2 botonera">
+                        <button type="button" class="btn btn-primary guardar" id="guardar" onclick="getActor()">Buscar</button>
+                        <button type="button" class="btn btn-success guardar" id="guardar" onclick="postActor()">Guardar</button>
+                        <button type="button" class="btn btn-danger guardar" id="guardar" onclick="delActor()">Borrar</button>
+                        <button type="button" class="btn btn-warning guardar" id="guardar" onclick="putActor()">Modificar</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 formulario__contenido">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="idBusqueda">Id de busqueda</label>
+                                    <input type="text" class="form-control" id="idBusqueda"  placeholder="Introduce una id para buscar">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre"  placeholder="Nombre">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="edad">Edad</label>
+                                    <input type="text" class="form-control" id="edad"  placeholder="Edad">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="genero">Genero</label>
+                                    <input type="text" class="form-control" id="genero"  placeholder="Genero">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="peso">Peso</label>
+                                    <input type="text" class="form-control" id="peso"  placeholder="Peso">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="altura">Altura</label>
+                                    <input type="text" class="form-control" id="altura"  placeholder="Altura">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="colorPelo">Color de pelo</label>
+                                    <input type="text" class="form-control" id="colorPelo"  placeholder="Color de pelo">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="colorOjo">Color de ojos</label>
+                                    <input type="text" class="form-control" id="colorOjo"  placeholder="Color de ojos">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="raza">Raza</label>
+                                    <input type="text" class="form-control" id="raza"  placeholder="Raza">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="esRetirado">¿Está retirado?</label>
+                                    <select class="form-control" id="esRetirado">
+                                        <option>Si</option>
+                                        <option selected>No</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="nacionalidad">Nacionalidad</label>
+                                    <input type="text" class="form-control" id="nacionalidad"  placeholder="Nacionalidad">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="oscars">Número de Oscars</label>
+                                    <input type="number" class="form-control" id="oscars"  placeholder="Número de Oscars">
+                                </div>
+                            </div>
+                            
+                          </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2"></div>
+                </div>
+            </div>
+
+    </section>
+    <div class="toast" id="toast">
+        
+    </div>
+    <footer class="footer">
+        <h4 class="footer__nombre">
+            Jose Antonio Ors
+        </h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
