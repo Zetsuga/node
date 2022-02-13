@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./img/fondo.jpg);
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    z-index: 5;
+}
+
+.cabecera__logo{
+    max-width: 150px;
+    padding-left: 50px;
+}
+
+.cabecera__menu{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:15px;
+}
+
+.cabecera__menu__boton{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.cabecera__menu__boton:hover{
+    text-decoration: none;
+    color: rgb(255, 230, 0);
+    font-size: large;
+}
+
+.bannerPrincipal{
+    padding-top: 100px;
+}
+
+
+.formulario__contenido {
+    background-color: rgb(255 255 255 / 35%);
+    border: dotted 1px grey;
+    border-radius: 15px;
+    padding: 15px 10px;
+}
+
+.btn{
+    width: 50%;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.toast{
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    width: 250px;
+}
+
+.toast___titulo--verde{
+    color: #0bb51f;
+}
+
+.toast___titulo--rojo{
+    color: #d30404;
+}
+
+.toast__texto{
+    color:black;
+}
+
+.listaActores, .formulario{
+    padding-top: 50px;
+}
+
+.formulario__titulo{
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    text-shadow: grey 5px 5px 20px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.card{
+    border-radius: 10px;
+    border: 3px dotted grey;
+    margin-top: 20px;
+    box-shadow: 4px 4px 15px grey;
+}
+
+.card-img-top{
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.card-text{
+    font-size: larger;
+    font-weight: 400;
+    padding: 0 0 20px 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.footer__nombre{
+    color: white;
+    font-size: 1em;
+}
+
+@media screen and (max-width:640px){
+    .botonera{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-top: 30px;
+    }
+}
