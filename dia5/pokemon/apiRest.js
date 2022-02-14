@@ -21,6 +21,7 @@ app.get("/pokemon",function(request,response){
             "nombre" : data.data.name,
             "tipo" : data.data.types,
             "imagen" : data.data.sprites.other,
+            "sprites" : data.data.sprites,
             "movimientos" : data.data.moves,
             "peso" : data.data.weight,
             "altura" : data.data.height,

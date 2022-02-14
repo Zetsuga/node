@@ -35,6 +35,11 @@ function cargarPokemon(pokemon){
     let tipo = document.getElementById("tipo");
     let movimientosLvl = document.getElementById("lvl");
     let movimientosMt = document.getElementById("mt");
+    let sprite1 = document.getElementById("sprite1");
+    let sprite2 = document.getElementById("sprite2");
+    let sprite3 = document.getElementById("sprite3");
+    let sprite4 = document.getElementById("sprite4");
+
     let lvl=`<h3 class="titulo__movimientos">Movimientos al subir de nivel</h3>
                 <table class="table tablaLvl table-striped table-hover">
                 <thead>
@@ -51,8 +56,12 @@ function cargarPokemon(pokemon){
                     <td scope="col">Generación</td>
                 </thead>
                 <tbody>`;
-
+    console.log(pokemon.sprites)
     imagen.src = pokemon.imagen.home.front_default;
+    sprite1.src = pokemon.sprites.front_default;
+    sprite2.src = pokemon.sprites.back_default;
+    sprite3.src = pokemon.sprites.front_shiny;
+    sprite4.src = pokemon.sprites.back_shiny;
     nombre.innerHTML += pokemon.nombre;
     peso.innerHTML += pokemon.peso;
     altura.innerHTML += pokemon.altura;
