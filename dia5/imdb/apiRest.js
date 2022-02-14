@@ -38,7 +38,6 @@ app.get("/", function(request,response){
 });
 
 app.get("/profesionales",function(request,response){
-    
     if(request.query.id!="null"){
         if(request.query.id <= arrayActores.length && request.query.id>=0){
             respuesta = { error: false, codigo:200, mensaje: "Actor encontrado",resultado:arrayActores[request.query.id]}
@@ -70,7 +69,7 @@ app.post("/profesionales", function(request,response){
 app.put("/profesionales", function(request,response){
     let temp = request.body.actor;
     let id = request.body.id.id;
-    console.log(id3)
+    console.log(id)
     console.log(arrayActores[id])
     if(id <= arrayActores.length && id>=0){
         arrayActores[id].name = temp.name;
