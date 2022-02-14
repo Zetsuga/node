@@ -42,6 +42,7 @@ function getActor(){
             cargarActores(datos.resultado);
             crearAlertaTrue(datos.mensaje,(datos.error)?"Error":"Correcto");
         }else{
+            limpiarActores();
             crearAlertafalse(datos.mensaje,(datos.error)?"Error":"Correcto");
         }
         
@@ -214,8 +215,9 @@ function crearAlertafalse(text,title){
     let texto = text;
     let titulo = title;
     let toast = document.getElementById("toast");
+    
     toast.innerHTML="";
-
+    
     let alerta = `<div class="toast-header">
                 <h4 class="mr-auto toast__titulo__rojo">
                 <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" 
@@ -228,7 +230,6 @@ function crearAlertafalse(text,title){
                 </div>`;
     toast.innerHTML += alerta;
     var toastOn = new bootstrap.Toast(toast);
-
     toastOn.show()
 }
 getActor()

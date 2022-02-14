@@ -73,17 +73,17 @@ body{
 
 .toast{
     position: fixed;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     max-width: 250px;
     width: 250px;
 }
 
-.toast___titulo--verde{
+.toast__titulo--verde{
     color: #0bb51f;
 }
 
-.toast___titulo--rojo{
+.toast__titulo--rojo{
     color: #d30404;
 }
 
